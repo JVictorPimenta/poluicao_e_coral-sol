@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../App.css";
+import { Link } from 'react-router-dom';
 
 const questions = [
   {
@@ -282,6 +283,11 @@ export default function QuizGame() {
             </button>
           );
         })}
+      </div>
+      <div style={{ marginTop: '1rem' }}>
+        <Link to="/">
+          <button className="default">Voltar</button>
+        </Link>
       </div>
     </div>
   );

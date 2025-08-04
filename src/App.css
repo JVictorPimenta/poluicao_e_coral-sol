@@ -1,5 +1,16 @@
+.flash {
+  animation: flash-bg 0.2s ease-in-out;
+}
 
-/* Estilo básico para o quiz */
+@keyframes flash-bg {
+  0% {
+    background-color: #10b98133;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -28,6 +39,13 @@ h2 {
   font-size: 0.9rem;
   color: #94a3b8;
   margin-bottom: 15px;
+}
+
+.options-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: center;
 }
 
 .options-grid {

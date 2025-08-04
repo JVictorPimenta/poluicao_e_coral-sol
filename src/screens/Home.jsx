@@ -6,12 +6,18 @@ export default function Home() {
     <div className="quiz-container">
       <h1>Bem-vindo!</h1>
       <p>Escolha uma opção:</p>
-      <div className="options-grid">
-        <Link to="/quiz">
-          <button className="default">Fazer o Quiz</button>
-        </Link>
+      <div className="options-home">
         <Link to="/apoio">
-          <button className="default">Ler Textos de Apoio</button>
+          <button style={{minWidth:'200px'}} className="default">Ler textos de apoio</button>
+        </Link>
+        <Link to="/quiz">
+          <button style={{minWidth:'200px'}} className="default">Fazer o quiz</button>
+        </Link>
+        <Link to="/simulador"> 
+          <button style={{minWidth:'200px'}} className='default'>Ir para o simulador</button>
+        </Link>
+        <Link to="/toupeira"> 
+          <button style={{minWidth:'200px'}} className='default'>Ir para o jogo da toupeira</button>
         </Link>
       </div>
     </div>
