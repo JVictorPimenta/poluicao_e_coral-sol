@@ -34,7 +34,7 @@ export default function Simulador() {
     },
     {
       nome: 'Soltar Peixes',
-      efeito: (eco) => ({ ...eco, peixes: Math.min(eco.peixes + 15, limites.max), algas: eco.algas - 3 }),
+      efeito: (eco) => ({ ...eco, peixes: Math.min(eco.peixes + 15, limites.max), algas: eco.algas - 2 }),
     },
     {
       nome: 'Proteger Corais',
@@ -42,7 +42,7 @@ export default function Simulador() {
     },
     {
       nome: 'Reduzir Pesca',
-      efeito: (eco) => ({ ...eco, peixes: eco.peixes + 10, algas: eco.algas + 5, tubaroes: eco.tubaroes + 1 }),
+      efeito: (eco) => ({ ...eco, peixes: eco.peixes + 10, algas: eco.algas + 1, tubaroes: eco.tubaroes + 3 }),
     },
     {
       nome: 'Despejar Lixo (Sabotar)',
