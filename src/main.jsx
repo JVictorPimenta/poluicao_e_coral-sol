@@ -9,7 +9,7 @@ import Mole from './screens/Toupeira.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/poluicao_e_coral-sol">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz" element={<QuizGame />} />
